@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Home Page</title>
+</head>
+<body>
+<h1>Hello 
+	<span th:text="${session.currentUser?.username}" > World </span>
+</h1>
+<p>
+<a th:href="@{/login}">Login</a> <br/>
+<a th:href="@{/register}">Register</a> <br/>
+<a th:href="@{/loginin}">Loginin</a> <br/>
+</p>
+
+</body>
+</html>
